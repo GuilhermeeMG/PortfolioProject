@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}
