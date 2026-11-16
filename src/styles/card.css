@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  min-height: 20rem;
+  padding: var(--space-xl);
+  border: 1px solid transparent;
+  border-radius: var(--radius-xl);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.card-dark {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.card-elevated {
+  border-color: var(--bg-subtle);
+  background-color: var(--bg-elevated);
+}

@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="src/styles/tokens.css">
   <link rel="stylesheet" href="src/styles/base.css">
   <link rel="stylesheet" href="src/styles/buttons.css">
+  <link rel="stylesheet" href="src/styles/card.css">
   <link rel="stylesheet" href="src/styles/nav.css">
   <link rel="stylesheet" href="src/styles/intro.css">
+  <link rel="stylesheet" href="src/styles/about.css">
   <script type="module" src="src/main.js"></script>
 </head>
 <body>
@@ -51,12 +53,37 @@
       <p class="intro-scroll label">↓ Scroll</p>
     </section>
 
-    <section id="work">
-      <h2>Work</h2>
-    </section>
+    <section id="about" class="about">
+      <header class="about-header">
+        <h2 class="about-title">Bits about <em>me</em></h2>
+        <p class="label">(02) About</p>
+      </header>
 
-    <section id="about">
-      <h2>About</h2>
+      <div class="about-grid">
+        <div class="card card-dark about-currently">
+          <h3 class="label label-accent">(Currently)</h3>
+          <p class="about-statement">Researching <em>cache strategies for web state</em> — my MSc thesis at the University of Coimbra.</p>
+        </div>
+
+        <div class="card about-photo"></div>
+
+        <div class="card">
+          <h3 class="label">(Based in)</h3>
+          <div class="about-place">
+            <p class="about-city">Coimbra,<br>Portugal</p>
+            <p class="label">40.2033° N · 8.4103° W</p>
+          </div>
+        </div>
+
+        <div class="card card-elevated about-experience-card">
+          <h3 class="label">(Experience)</h3>
+          <ul class="about-experience">
+            <li><span class="about-company">ShiftAppens 2026</span> <span class="about-role">Tech Lead</span></li>
+            <li><span class="about-company">JeKnowledge</span> <span class="about-role">Senior Developer</span></li>
+            <li><span class="about-company">RedLight Software</span> <span class="about-role">Software Developer Intern</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="languages">

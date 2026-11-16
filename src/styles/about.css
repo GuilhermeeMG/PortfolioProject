@@ -1,0 +1,86 @@
+.about {
+  display: grid;
+  gap: var(--space-xl);
+  padding: var(--space-5xl) var(--space-2xl) var(--space-xl);
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.about-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--display-size);
+}
+
+.about-title em,
+.about-statement em {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+.about-title em {
+  color: var(--accent);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 27.5rem 1fr 27.5rem;
+  gap: var(--space-md);
+}
+
+.about-currently {
+  grid-column: 1 / 3;
+}
+
+.about-experience-card {
+  grid-column: 2 / 4;
+}
+
+.about-statement {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--serif-size);
+}
+
+.about-place {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.about-city {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--title-size);
+  line-height: 0.95;
+}
+
+.about-experience {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-experience li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-md);
+  border-top: 1px solid var(--bg-subtle);
+}
+
+.about-company {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--heading-size);
+}
+
+.about-role {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: var(--small-size);
+}
