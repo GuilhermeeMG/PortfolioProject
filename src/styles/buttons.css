@@ -1,0 +1,21 @@
+.button {
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--bg-subtle);
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: var(--body-size);
+  text-decoration: none;
+}
+
+.button-primary {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: var(--text-on-accent);
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+

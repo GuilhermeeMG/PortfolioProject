@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Guilherme Gonçalves">
   <title>Guilherme Gonçalves - Portfolio</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Geist+Mono:wght@500&family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="src/styles/tokens.css">
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/buttons.css">
+  <link rel="stylesheet" href="src/styles/intro.css">
   <script type="module" src="src/main.js"></script>
 </head>
 <body>
@@ -18,8 +24,28 @@
   </header>
 
   <main>
-    <section id="about">
-      <h1>Guilherme Gonçalves</h1>
+    <section class="intro">
+      <div class="intro-heading">
+        <h1>
+          <span class="intro-mega">Software</span>
+          <span class="intro-serif">engineer<span class="intro-dot">.</span></span>
+        </h1>
+        <div class="intro-photo">
+          <p class="intro-badge">Hi, I’m<br>Gui</p>
+        </div>
+      </div>
+
+      <div class="intro-aside">
+        <p class="label label-accent">(Software engineer)</p>
+        <p>MSc student in Software Engineering at the University of Coimbra, Portugal.</p>
+      </div>
+
+      <div class="intro-actions">
+        <a class="button button-primary" href="#projects">See my work</a>
+        <a class="button" href="#contact">Say hi</a>
+      </div>
+
+      <p class="intro-scroll label">↓ Scroll</p>
     </section>
 
     <section id="projects">

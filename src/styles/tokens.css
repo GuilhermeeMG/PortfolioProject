@@ -1,0 +1,58 @@
+:root {
+  --bg-primary: #F2EFE8;
+  --bg-secondary: #E9E4D9;
+  --bg-elevated: #FBFAF6;
+  --bg-subtle: #D6CFC1;
+
+  --text-primary: #141414;
+  --text-secondary: #5A5750;
+  --text-tertiary: #8C887F;
+  --text-on-accent: #FFFFFF;
+
+  --accent: #FF4F1A;
+  --accent-subtle: #FFE2D4;
+
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --mega-size: 5.375rem;
+  --serif-xl-size: 4.75rem;
+  --display-size: 3.25rem;
+  --title-size: 2rem;
+  --heading-size: 1.625rem;
+  --serif-size: 2.25rem;
+  --body-size: 1.0625rem;
+  --small-size: 0.875rem;
+  --label-size: 0.75rem;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-pill: 999px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --mega-size: 13rem;
+    --serif-xl-size: 13rem;
+    --display-size: 6rem;
+    --title-size: 3.5rem;
+    --heading-size: 2rem;
+    --serif-size: 2.75rem;
+    --body-size: 1.125rem;
+  }
+}
