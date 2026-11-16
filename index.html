@@ -11,15 +11,18 @@
   <link rel="stylesheet" href="src/styles/tokens.css">
   <link rel="stylesheet" href="src/styles/base.css">
   <link rel="stylesheet" href="src/styles/buttons.css">
+  <link rel="stylesheet" href="src/styles/nav.css">
   <link rel="stylesheet" href="src/styles/intro.css">
   <script type="module" src="src/main.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="nav">
+    <a class="nav-logo" href="#">Gui</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a class="label" href="#work">(01) Work</a>
+      <a class="label" href="#about">(02) About</a>
+      <a class="label" href="#languages">(03) Languages</a>
+      <a class="label" href="#contact">(04) Contact</a>
     </nav>
   </header>
 
@@ -41,15 +44,23 @@
       </div>
 
       <div class="intro-actions">
-        <a class="button button-primary" href="#projects">See my work</a>
+        <a class="button button-primary" href="#work">See my work</a>
         <a class="button" href="#contact">Say hi</a>
       </div>
 
       <p class="intro-scroll label">↓ Scroll</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="work">
+      <h2>Work</h2>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
     </section>
 
     <section id="contact">
