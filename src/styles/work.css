@@ -1,0 +1,29 @@
+.work {
+  padding: var(--space-5xl) var(--space-2xl);
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: var(--space-2xl);
+}
+
+.work-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--display-size);
+}
+
+.work-title em {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--text-primary);
+}
