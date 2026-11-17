@@ -4,9 +4,9 @@
   align-items: flex-start;
   gap: var(--space-xs);
   padding: var(--space-lg);
-  border: 1px solid var(--text-secondary);
+  border: 1px solid var(--dark-border);
   border-radius: var(--radius-xl);
-  background-color: var(--text-primary);
+  background-color: var(--dark-surface);
   color: var(--bg-primary);
   overflow: hidden;
 }
@@ -26,9 +26,9 @@
 }
 
 .terminal-prompt {
-  color: var(--accent);
+  color: var(--dark-accent);
 }
 
 .terminal-muted {
-  color: var(--text-tertiary);
+  color: var(--dark-text-secondary);
 }

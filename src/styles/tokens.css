@@ -12,6 +12,12 @@
   --accent: #FF4F1A;
   --accent-subtle: #FFE2D4;
 
+  --dark-bg: #121211;
+  --dark-surface: #252421;
+  --dark-border: #34322E;
+  --dark-text-secondary: #A8A398;
+  --dark-accent: #FF6A3D;
+
   --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-sans: 'Instrument Sans', system-ui, sans-serif;
@@ -20,6 +26,7 @@
   --mega-size: 5.375rem;
   --serif-xl-size: 4.75rem;
   --display-size: 3.25rem;
+  --display-s-size: 2.5rem;
   --title-size: 2rem;
   --heading-size: 1.625rem;
   --serif-size: 2.25rem;
@@ -50,6 +57,7 @@
     --mega-size: 13rem;
     --serif-xl-size: 13rem;
     --display-size: 6rem;
+    --display-s-size: 4.5rem;
     --title-size: 3.5rem;
     --heading-size: 2rem;
     --serif-size: 2.75rem;

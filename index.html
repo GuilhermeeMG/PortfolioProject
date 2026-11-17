@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="src/styles/intro.css">
   <link rel="stylesheet" href="src/styles/about.css">
   <link rel="stylesheet" href="src/styles/work.css">
+  <link rel="stylesheet" href="src/styles/languages.css">
   <script type="module" src="src/main.js"></script>
 </head>
 <body>
@@ -153,8 +154,12 @@
         </li>
       </ol>
     </section>
-    <section id="languages">
-      <div class="terminal">
+    <section id="languages" class="languages">
+      <div class="languages-intro">
+        <p class="label label-accent">(03) Languages</p>
+        <h2 class="languages-title">Languages <em>I speak</em></h2>
+        <p class="languages-lead">TypeScript every day on the frontend. On the backend I’ve shipped with C#, Ruby and Python — plus SQL underneath all of it.</p>
+        <div class="terminal">
         <img class="terminal-dots" src="src/assets/terminal-dots.svg">
         <pre class="terminal-body"><code><span class="terminal-prompt">$ cat stack.json</span>
 <span class="terminal-muted">{</span>
@@ -163,7 +168,41 @@
   "backend":  ["dotnet", "rails", "django"],
   "infra":    ["celery", "redis", "k8s"]
 <span class="terminal-muted">}</span></code></pre>
+        </div>
       </div>
+
+      <ul class="languages-list">
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-typescript.svg" alt="" width="48" height="48">
+          <h3 class="language-name">TypeScript</h3>
+          <p class="label label-accent language-tag">frontend · daily</p>
+        </li>
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-javascript.svg" alt="" width="48" height="48">
+          <h3 class="language-name">JavaScript</h3>
+          <p class="label label-accent language-tag">everywhere</p>
+        </li>
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-python.svg" alt="" width="48" height="48">
+          <h3 class="language-name">Python</h3>
+          <p class="label label-accent language-tag">django · celery</p>
+        </li>
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-dotnet.svg" alt="" width="48" height="48">
+          <h3 class="language-name">C#</h3>
+          <p class="label label-accent language-tag">.net core · ef core</p>
+        </li>
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-ruby.svg" alt="" width="48" height="48">
+          <h3 class="language-name">Ruby</h3>
+          <p class="label label-accent language-tag">rails</p>
+        </li>
+        <li class="language-row">
+          <img class="language-logo" src="src/assets/logo-sql.svg" alt="" width="48" height="48">
+          <h3 class="language-name">SQL</h3>
+          <p class="label label-accent language-tag">data modelling</p>
+        </li>
+      </ul>
     </section>
     <section id="contact">
       <h2>Contact</h2>
