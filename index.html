@@ -15,12 +15,14 @@
   <link rel="stylesheet" href="src/styles/work-row.css">
   <link rel="stylesheet" href="src/styles/terminal.css">
   <link rel="stylesheet" href="src/styles/repo-card.css">
+  <link rel="stylesheet" href="src/styles/arrow-button.css">
   <link rel="stylesheet" href="src/styles/nav.css">
   <link rel="stylesheet" href="src/styles/intro.css">
   <link rel="stylesheet" href="src/styles/about.css">
   <link rel="stylesheet" href="src/styles/work.css">
   <link rel="stylesheet" href="src/styles/github.css">
   <link rel="stylesheet" href="src/styles/languages.css">
+  <link rel="stylesheet" href="src/styles/contact.css">
   <script type="module" src="src/scripts/main.js"></script>
 </head>
 <body>
@@ -228,11 +230,27 @@
         </li>
       </ul>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" class="contact">
+      <p class="label label-accent">(04) Contact</p>
+      <h2 class="contact-title">
+        Let’s <em>talk</em>
+        <a class="arrow-button" href="mailto:guilhermegoncalves1507@gmail.com" aria-label="Email me">
+          <img src="src/assets/icon-arrow-up-right-lg.svg" alt="" width="64" height="64">
+        </a>
+      </h2>
+      <ul class="contact-links">
+        <li><a href="mailto:guilhermegoncalves1507@gmail.com">Email ↗</a></li>
+        <li><a href="https://github.com/GuilhermeeMG">GitHub ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-gon%C3%A7alves-634495338/">LinkedIn ↗</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="label">2026 Guilherme Gonçalves</p>
+      <a class="label" href="#">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

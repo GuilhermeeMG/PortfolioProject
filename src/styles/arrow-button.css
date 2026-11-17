@@ -1,0 +1,30 @@
+.arrow-button {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--text-primary);
+  transition:
+    background-color var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out);
+}
+
+.arrow-button img {
+  display: block;
+  transition: transform var(--duration-base) var(--ease-spring);
+}
+
+.arrow-button:hover,
+.arrow-button:focus-visible {
+  background-color: var(--accent);
+
+  img {
+    transform: rotate(45deg);
+  }
+}
+
+.arrow-button:active {
+  transform: scale(0.96);
+}
