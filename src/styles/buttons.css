@@ -7,6 +7,10 @@
   font-weight: 500;
   font-size: var(--body-size);
   text-decoration: none;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    opacity var(--duration-press) var(--ease-out),
+    scale var(--duration-press) var(--ease-out);
 }
 
 .button-primary {
@@ -16,6 +20,14 @@
 }
 
 .button:hover {
-  opacity: 0.8;
+  background-color: var(--bg-secondary);
 }
 
+.button-primary:hover {
+  background-color: color-mix(in srgb, var(--accent) 86%, var(--bg-primary));
+}
+
+.button:active {
+  opacity: 0.72;
+  scale: 0.97;
+}

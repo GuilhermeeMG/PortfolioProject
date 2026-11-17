@@ -1,0 +1,101 @@
+.marquee {
+  position: relative;
+  height: 11.25rem;
+  overflow: clip;
+}
+
+.band {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  overflow: hidden;
+  padding-block: var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--band-size);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  animation: band-slide-in var(--duration-entrance) var(--ease-out) 200ms backwards;
+}
+
+.band-accent {
+  --band-from: -30%;
+
+  top: 1.5rem;
+  rotate: -2.5deg;
+  background-color: var(--accent);
+  color: var(--text-on-accent);
+}
+
+.band-ink {
+  --band-from: 30%;
+
+  top: 5rem;
+  rotate: 2deg;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.band-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.band-accent .band-track {
+  animation-duration: 55s;
+  animation-direction: reverse;
+}
+
+.band:hover .band-track {
+  animation-play-state: paused;
+}
+
+.band-item {
+  padding-inline: var(--space-s);
+}
+
+.band-star {
+  font-size: 0.8em;
+}
+
+.band-accent .band-star {
+  color: var(--text-primary);
+}
+
+.band-ink .band-star {
+  color: var(--accent);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes band-slide-in {
+  from {
+    opacity: 0;
+    translate: var(--band-from) 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .marquee {
+    height: 7.5rem;
+  }
+
+  .band {
+    padding-block: var(--space-s);
+  }
+
+  .band-accent {
+    top: 2.5rem;
+  }
+
+  .band-ink {
+    top: 0.75rem;
+  }
+}

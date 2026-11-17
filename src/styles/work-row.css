@@ -77,11 +77,70 @@
   opacity: 0;
 }
 
-.work-row:hover,
-.work-row:focus-within {
-  .work-row-arrow {
-    opacity: 1;
+/* Hover: row slides in 20px on an accent wash, title turns accent,
+   thumbnail straightens and grows, arrow fades in */
+.work-row {
+  transition: background-color var(--duration-base) var(--ease-out);
+}
+
+.work-row > * {
+  transition:
+    translate var(--duration-base) var(--ease-out),
+    rotate var(--duration-base) var(--ease-out),
+    scale var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out),
+    opacity var(--duration-base) var(--ease-out);
+}
+
+.work-row:focus-within .work-row-arrow {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .work-row:hover {
+    background-color: var(--accent-subtle);
+
+    > * {
+      translate: 1.25rem 0;
+    }
+
+    .work-row-title {
+      color: var(--accent);
+    }
+
+    .work-row-thumb {
+      rotate: 0deg;
+      scale: 1.16;
+    }
+
+    .work-row-arrow {
+      opacity: 1;
+    }
   }
+}
+
+/* Scroll reveal: fade up 24px as each row enters the viewport */
+@supports (animation-timeline: view()) {
+  .work-row {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* Fallback driven by src/scripts/reveal.js */
+.work-row.reveal-pending {
+  opacity: 0;
+  translate: 0 1.5rem;
+}
+
+.work-row.reveal-pending.is-revealed {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--duration-slow) var(--ease-out) var(--reveal-delay, 0ms),
+    translate var(--duration-slow) var(--ease-out) var(--reveal-delay, 0ms),
+    background-color var(--duration-base) var(--ease-out);
 }
 
 @media (max-width: 1023px) {

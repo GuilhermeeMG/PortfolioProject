@@ -134,12 +134,6 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .repo-card.is-loading * {
-    animation: none;
-  }
-}
-
 .repo-card:hover,
 .repo-card:focus-visible {
   border-color: var(--accent);

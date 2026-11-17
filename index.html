@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Geist+Mono:wght@500&family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
   <link rel="stylesheet" href="src/styles/tokens.css">
   <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/motion.css">
   <link rel="stylesheet" href="src/styles/buttons.css">
   <link rel="stylesheet" href="src/styles/card.css">
   <link rel="stylesheet" href="src/styles/work-row.css">
@@ -18,6 +19,7 @@
   <link rel="stylesheet" href="src/styles/arrow-button.css">
   <link rel="stylesheet" href="src/styles/nav.css">
   <link rel="stylesheet" href="src/styles/intro.css">
+  <link rel="stylesheet" href="src/styles/marquee.css">
   <link rel="stylesheet" href="src/styles/about.css">
   <link rel="stylesheet" href="src/styles/work.css">
   <link rel="stylesheet" href="src/styles/github.css">
@@ -47,7 +49,10 @@
           <span class="intro-serif">engineer<span class="intro-dot">.</span></span>
         </h1>
         <div class="intro-photo">
-          <p class="intro-badge">Hi, I’m<br>Gui</p>
+          <a class="intro-badge" href="#contact" aria-label="Say hi">
+            <span class="intro-badge-label">Hi, I’m<br>Gui</span>
+            <span class="intro-badge-label intro-badge-hover" aria-hidden="true">Say hi ✦</span>
+          </a>
         </div>
       </div>
 
@@ -62,6 +67,11 @@
       </div>
 
       <p class="intro-scroll label">↓ Scroll</p>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="band band-accent"><div class="band-track" data-band="accent"></div></div>
+      <div class="band band-ink"><div class="band-track" data-band="ink"></div></div>
     </section>
 
     <section id="about" class="about">
@@ -120,10 +130,10 @@
 
         <li class="work-row">
           <p class="label work-row-number">02</p>
-          <h3 class="work-row-title">Oncology Follow-up</h3>
+          <h3 class="work-row-title">Associação Portuguesa do Lixo Marinho</h3>
           <div class="work-row-languages">
             <p>Team project</p>
-            <p class="work-row-tags">React · TypeScript · Zod</p>
+            <p class="work-row-tags">React · TypeScript</p>
           </div>
           <p class="label work-row-year">2026</p>
           <div class="work-row-thumb"></div>
@@ -134,10 +144,10 @@
 
         <li class="work-row">
           <p class="label work-row-number">03</p>
-          <h3 class="work-row-title">Cache strategies for web state</h3>
+          <h3 class="work-row-title">Associação Portuguesa do Cancro do Cérebro</h3>
           <div class="work-row-languages">
             <p>MSc thesis</p>
-            <p class="work-row-tags">TanStack Query · Research</p>
+            <p class="work-row-tags">React · Three Fiber </p>
           </div>
           <p class="label work-row-year">2026</p>
           <div class="work-row-thumb"></div>

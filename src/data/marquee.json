@@ -1,0 +1,20 @@
+{
+  "accent": [
+    "Interfaces",
+    "Motion",
+    "Animations",
+    "Accessibility",
+    "Performance"
+  ],
+  "ink": [
+    "TypeScript",
+    "React",
+    "TanStack Query",
+    "Chakra UI",
+    "CSS",
+    "React Hook Form",
+    "Django",
+    "Rails",
+    ".NET"
+  ]
+}

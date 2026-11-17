@@ -76,6 +76,45 @@
   white-space: nowrap;
 }
 
+/* Hover: row slides in 24px, name turns accent, logo tilts, label turns ink */
+.language-row > * {
+  transition:
+    translate var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out),
+    -webkit-text-stroke-color var(--duration-base) var(--ease-out);
+}
+
+.language-logo {
+  transition:
+    translate var(--duration-base) var(--ease-out),
+    rotate var(--duration-base) var(--ease-spring);
+}
+
+@media (hover: hover) {
+  .language-row:hover {
+    > * {
+      translate: var(--space-lg) 0;
+    }
+
+    .language-name {
+      color: var(--accent);
+    }
+
+    .language-logo {
+      rotate: -10deg;
+    }
+
+    .language-tag {
+      color: var(--bg-primary);
+    }
+  }
+
+  .language-row:nth-child(even):hover .language-name {
+    color: transparent;
+    -webkit-text-stroke-color: var(--accent);
+  }
+}
+
 @media (max-width: 1023px) {
   .languages {
     flex-direction: column;

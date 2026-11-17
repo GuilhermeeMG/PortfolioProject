@@ -74,7 +74,54 @@
   font-size: 0.125em;
   line-height: 1.08;
   text-align: center;
+  text-decoration: none;
   rotate: -12deg;
+  transition:
+    rotate var(--duration-base) var(--ease-spring),
+    scale var(--duration-base) var(--ease-spring),
+    background-color var(--duration-base) var(--ease-out);
+  animation: spin-in var(--duration-entrance) var(--ease-spring) 300ms backwards;
+}
+
+/* Both labels share one grid cell; hover swaps which one is visible */
+.intro-badge-label {
+  grid-area: 1 / 1;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+.intro-badge-hover {
+  opacity: 0;
+}
+
+.intro-badge:hover,
+.intro-badge:focus-visible {
+  rotate: -4deg;
+  scale: 1.06;
+  background-color: var(--text-primary);
+
+  .intro-badge-label {
+    opacity: 0;
+  }
+
+  .intro-badge-hover {
+    opacity: 1;
+  }
+}
+
+/* Page load: lines rise 48px and fade in, staggered 90ms; photo fades in */
+.intro-mega,
+.intro-serif {
+  --fade-up-distance: 3rem;
+
+  animation: fade-up var(--duration-entrance) var(--ease-out) 50ms backwards;
+}
+
+.intro-serif {
+  animation-delay: 140ms;
+}
+
+.intro-photo {
+  animation: fade-in var(--duration-entrance) var(--ease-out) 50ms backwards;
 }
 
 .intro-aside {

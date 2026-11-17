@@ -30,6 +30,7 @@
   --display-s-size: 2.25rem;
   --title-size: 2rem;
   --heading-size: 1.625rem;
+  --band-size: 1.75rem;
   --serif-size: 2.25rem;
   --body-size: 1.0625rem;
   --small-size: 0.875rem;
@@ -55,9 +56,13 @@
 
   --shadow-raised: 0 20px 40px -16px rgb(20 20 20 / 0.1);
 
+  --duration-press: 100ms;
+  --duration-fast: 150ms;
   --duration-base: 300ms;
+  --duration-slow: 500ms;
+  --duration-entrance: 800ms;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring: cubic-bezier(0.34, 1.36, 0.64, 1);
 }
 
 @media (min-width: 1024px) {
@@ -69,6 +74,7 @@
     --display-s-size: 4.5rem;
     --title-size: 3.5rem;
     --heading-size: 2rem;
+    --band-size: 2.5rem;
     --serif-size: 2.75rem;
     --body-size: 1.125rem;
   }
