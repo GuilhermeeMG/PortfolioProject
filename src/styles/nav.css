@@ -28,3 +28,50 @@
   color: var(--accent);
 }
 
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-s) var(--space-md);
+  }
+
+  .nav-toggle {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-pill);
+    background-color: var(--text-primary);
+    cursor: pointer;
+  }
+
+  .nav-toggle img {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--text-primary);
+    background-color: var(--bg-primary);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+}
+

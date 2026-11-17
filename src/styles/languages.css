@@ -75,3 +75,36 @@
 .language-tag {
   white-space: nowrap;
 }
+
+@media (max-width: 1023px) {
+  .languages {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-lg);
+    padding: var(--space-3xl) var(--space-md);
+  }
+
+  /* Let the intro's children join the column so the terminal can move below the list */
+  .languages-intro {
+    display: contents;
+  }
+
+  .languages .terminal {
+    order: 1;
+  }
+
+  .language-row {
+    gap: var(--space-s);
+    padding: var(--space-md) 0;
+  }
+
+  .language-name {
+    flex: none;
+  }
+
+  .language-tag {
+    flex: 1;
+    white-space: normal;
+    text-align: right;
+  }
+}

@@ -28,7 +28,10 @@
 <body>
   <header class="nav">
     <a class="nav-logo" href="#">Gui</a>
-    <nav class="nav-links" aria-label="Sections">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <img src="src/assets/icon-menu.svg" alt="" width="20" height="20">
+    </button>
+    <nav id="nav-links" class="nav-links" aria-label="Sections">
       <a class="label" href="#work">(01) Work</a>
       <a class="label" href="#about">(02) About</a>
       <a class="label" href="#languages">(03) Languages</a>
@@ -233,7 +236,7 @@
     <section id="contact" class="contact">
       <p class="label label-accent">(04) Contact</p>
       <h2 class="contact-title">
-        Let’s <em>talk</em>
+        <span>Let’s</span> <em>talk</em>
         <a class="arrow-button" href="mailto:guilhermegoncalves1507@gmail.com" aria-label="Email me">
           <img src="src/assets/icon-arrow-up-right-lg.svg" alt="" width="64" height="64">
         </a>

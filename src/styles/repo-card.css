@@ -96,6 +96,13 @@
   margin-left: auto;
 }
 
+@media (max-width: 1023px) {
+  .repo-card {
+    height: 17rem;
+    padding: var(--space-lg);
+  }
+}
+
 /* Loading skeleton */
 
 .repo-card.is-loading {

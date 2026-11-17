@@ -69,3 +69,40 @@
 .site-footer a:hover {
   color: var(--accent);
 }
+
+@media (max-width: 1023px) {
+  .contact {
+    gap: var(--space-lg);
+    padding: var(--space-4xl) var(--space-md) var(--space-lg);
+  }
+
+  /* "Let's" fills row 1 on its own; "talk" and the button share row 2 */
+  .contact-title {
+    flex-wrap: wrap;
+    gap: var(--space-lg) var(--space-md);
+  }
+
+  .contact-title span {
+    flex-basis: 100%;
+  }
+
+  .contact-title .arrow-button {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+
+  .contact-title .arrow-button img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: var(--space-s);
+    padding-top: var(--space-xs);
+  }
+
+  .site-footer {
+    padding: 0 var(--space-md) var(--space-xl);
+  }
+}
