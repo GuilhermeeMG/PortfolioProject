@@ -1,0 +1,34 @@
+.terminal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  border: 1px solid var(--text-secondary);
+  border-radius: var(--radius-xl);
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.terminal-body {
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--small-size);
+  line-height: 1.625rem;
+}
+
+.terminal-body code {
+  font: inherit;
+}
+
+.terminal-prompt {
+  color: var(--accent);
+}
+
+.terminal-muted {
+  color: var(--text-tertiary);
+}

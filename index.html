@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="src/styles/buttons.css">
   <link rel="stylesheet" href="src/styles/card.css">
   <link rel="stylesheet" href="src/styles/work-row.css">
+  <link rel="stylesheet" href="src/styles/terminal.css">
   <link rel="stylesheet" href="src/styles/nav.css">
   <link rel="stylesheet" href="src/styles/intro.css">
   <link rel="stylesheet" href="src/styles/about.css">
@@ -151,6 +152,18 @@
           </button>
         </li>
       </ol>
+    </section>
+    <section id="languages">
+      <div class="terminal">
+        <img class="terminal-dots" src="src/assets/terminal-dots.svg">
+        <pre class="terminal-body"><code><span class="terminal-prompt">$ cat stack.json</span>
+<span class="terminal-muted">{</span>
+  "frontend": ["react", "tanstack-query",
+               "chakra-ui", "zod"],
+  "backend":  ["dotnet", "rails", "django"],
+  "infra":    ["celery", "redis", "k8s"]
+<span class="terminal-muted">}</span></code></pre>
+      </div>
     </section>
     <section id="contact">
       <h2>Contact</h2>
