@@ -96,6 +96,43 @@
   margin-left: auto;
 }
 
+/* Loading skeleton */
+
+.repo-card.is-loading {
+  pointer-events: none;
+}
+
+.repo-card.is-loading :is(
+  .repo-card-owner,
+  .repo-card-name,
+  .repo-card-description,
+  .repo-card-topics li,
+  .repo-card-language,
+  .repo-card-updated
+) {
+  width: fit-content;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--bg-secondary) 30%, var(--bg-elevated) 50%, var(--bg-secondary) 70%) 0 0 / 200% 100%;
+  color: transparent;
+  animation: repo-card-shimmer 1.4s linear infinite;
+}
+
+.repo-card.is-loading .repo-card-arrow img {
+  opacity: 0.3;
+}
+
+@keyframes repo-card-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .repo-card.is-loading * {
+    animation: none;
+  }
+}
+
 .repo-card:hover,
 .repo-card:focus-visible {
   border-color: var(--accent);
