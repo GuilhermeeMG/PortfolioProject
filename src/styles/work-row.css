@@ -60,25 +60,7 @@
   object-fit: cover;
 }
 
-.work-row-arrow {
-  display: grid;
-  flex-shrink: 0;
-  place-items: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: var(--radius-pill);
-  background-color: var(--accent);
-  color: var(--text-on-accent);
-  font-family: inherit;
-  font-size: var(--heading-size);
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  opacity: 0;
-}
 
-/* Hover: row slides in 20px on an accent wash, title turns accent,
-   thumbnail straightens and grows, arrow fades in */
 .work-row {
   transition: background-color var(--duration-base) var(--ease-out);
 }
@@ -88,12 +70,7 @@
     translate var(--duration-base) var(--ease-out),
     rotate var(--duration-base) var(--ease-out),
     scale var(--duration-base) var(--ease-out),
-    color var(--duration-base) var(--ease-out),
-    opacity var(--duration-base) var(--ease-out);
-}
-
-.work-row:focus-within .work-row-arrow {
-  opacity: 1;
+    color var(--duration-base) var(--ease-out);
 }
 
 @media (hover: hover) {
@@ -112,14 +89,9 @@
       rotate: 0deg;
       scale: 1.16;
     }
-
-    .work-row-arrow {
-      opacity: 1;
-    }
   }
 }
 
-/* Scroll reveal: fade up 24px as each row enters the viewport */
 @supports (animation-timeline: view()) {
   .work-row {
     animation: fade-up linear both;
@@ -128,7 +100,6 @@
   }
 }
 
-/* Fallback driven by src/scripts/reveal.js */
 .work-row.reveal-pending {
   opacity: 0;
   translate: 0 1.5rem;
@@ -183,7 +154,19 @@
     rotate: none;
   }
 
-  .work-row-arrow {
-    display: none;
+  .work-row,
+  .work-row.reveal-pending {
+    animation: none;
+    opacity: 1;
+    translate: none;
+  }
+
+  .work-row:hover > * {
+    translate: none;
+  }
+
+  .work-row:hover .work-row-thumb {
+    rotate: none;
+    scale: none;
   }
 }

@@ -33,7 +33,7 @@ const readFile = async (pathname) => {
     if (err.code === 'ENOENT' || err.code === 'EISDIR') throw new HttpError(404, 'Not found');
     throw err;
   });
-  return { content, type: TYPES[path.extname(file.pathname)] ?? 'application/octet-stream' };
+  return { content, type: TYPES[path.extname(file.pathname).toLowerCase()] ?? 'application/octet-stream' };
 };
 
 const serve = async (message, response) => {

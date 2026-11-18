@@ -41,6 +41,20 @@
   grid-column: 2 / 4;
 }
 
+.about-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+
 .about-statement {
   font-family: var(--font-display);
   font-weight: 600;
